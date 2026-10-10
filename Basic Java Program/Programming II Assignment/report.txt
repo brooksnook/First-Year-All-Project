@@ -1,0 +1,10 @@
+Cab Company Report
+Bus Cant1 had 19 journeys and made £74
+Cab UR2 driven by Uve Rebenich had 5 journeys and made £125
+Bus Ro2 had 27 journeys and made £189
+Cab ZC1 driven by Zaffer Chopra had 4 journeys and made £120
+Bus Uni1 had 25 journeys and made £61
+Cab KA3 driven by Kemi Adeyene had 9 journeys and made £315
+Cab MB4 driven by Molly Benjamin had 14 journeys and made £210
+
+Total takings for the day £1094

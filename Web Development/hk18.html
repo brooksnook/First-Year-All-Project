@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matching Cards Game</title>
+    <script type="text/javascript" src="hk18.js"></script>
+    <link rel="stylesheet" href="hk18.css">
+</head>
+<body>
+    <header>
+        <h1>Matching Cards Game</h1>
+        <hr>
+    </header>
+    <main>
+        <div id="options-and-buttons">
+                <h2>Select a Board Size</h2>
+            <form id="board-radio-buttons">
+                <div>
+                    <label for="size2">2 x 4</label>
+                    <input type="radio" name="board-size" value="8" id="size2" checked>
+                </div>
+                <div>
+                    <label for="size4">4 x 4</label>
+                    <input type="radio" name="board-size" value="16" id="size4">
+                </div>
+                <div>
+                    <label for="size6">6 x 4</label>
+                    <input type="radio" name="board-size" value="24" id="size6">
+                </div>
+            </form>
+            <br>
+            <div id="buttons">
+                <button id="btnShuffle">Shuffle Cards</button>
+                <button id="btnFlip">Flip Cards</button>
+            </div>
+        </div>
+        <br>
+        <div id="cards">
+            <br>
+            <section></section>
+            <br>
+            <template>
+               <div class="card" data-value="" data-suit="" data-card_number="" data-flipped="">
+                   <img src="" alt="">
+               </div>
+            </template>
+        </div>
+        <div id="clicksandpairs"><p id="pairs"></p><p id="clicks"></p></div>
+
+        <dialog id="win" class="end-dialog">
+            <p><b>You won!</b></p>
+            <button class="play-again">Play Again</button>
+        </dialog>
+
+        <dialog id="lose" class="end-dialog">
+            <p><b>You lost...</b></p>
+            <button class="play-again">Play Again</button>
+        </dialog>
+    </main>
+</body>
+</html>

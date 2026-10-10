@@ -1,0 +1,126 @@
+body {
+   font-family: sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   padding: 1em;
+}
+
+hr {
+   min-width: 100vw;
+}
+
+section {
+   flex: 25%;
+   min-width: 16em;
+   max-width: 40em;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 1rem;
+   margin: 1rem;
+}
+
+#cards {
+   background-color: rgba(173, 216, 260, 0.5);
+   border-radius: 25px;
+}
+
+button:hover {
+   filter: brightness(85%);
+   transition: 0.3s;
+}
+
+
+#board-radio-buttons {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+#buttons {
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.card {
+   width: 8em;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   padding: 0.5em;
+   background-color: linen;
+}
+
+#clicksandpairs {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+}
+
+button {
+   font-size: 1em;
+   padding: 8px 15px;
+   border: 1px solid darkgray;
+   border-radius: 10px;
+}
+
+/* Lifted some of this from MDN */
+.end-dialog {
+   position: absolute;
+   width: 20vw;
+   top: 50%;
+   bottom: 50%;
+   left: 50%;
+   right: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 25px;
+   transition:
+      opacity 0.7s ease-out,
+      transform 0.7s ease-out,
+      overlay 0.7s ease-out allow-discrete,
+      display 0.7s ease-out allow-discrete;
+}
+
+@starting-style {
+  .end-dialog:open {
+      opacity: 0;
+      transform: scaleY(0);
+  }
+}
+
+.end-dialog::backdrop {
+   background-color: transparent;
+   transition:
+      display 0.7s allow-discrete,
+      overlay 0.7s allow-discrete,
+      background-color 0.7s;
+}
+
+.end-dialog:open::backdrop {
+  background-color: rgb(0 0 0 / 25%);
+}
+
+@starting-style {
+  .end-dialog:open::backdrop {
+      background-color: transparent;
+   }
+}
+
+@media screen and (orientation: portrait) {
+   body {
+      font-size: 4vw;
+   }
+
+   .card {
+      width: 5em;
+   }
+
+   img {
+      width: 4em;
+   }
+
+   input {
+      height: 4vw;
+      width: 4vw;
+   }
+}
