@@ -1,0 +1,1 @@
+Very basic Java program that calculates earnings for a taxi company.
