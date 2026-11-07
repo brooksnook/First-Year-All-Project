@@ -1,0 +1,1 @@
+Various things from my first year of university including a mock 8 bit CPU; basic Java program for a travel company; a Figma prototype for a cooking school's website; a FlappyBird clone written in MicroPython; and a card game using HTML, CSS, and JavaScript.
